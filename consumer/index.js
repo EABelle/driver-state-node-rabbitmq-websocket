@@ -66,7 +66,7 @@ amqp.connect(AMQP_URL, (err, connection) => {
             const message = JSON.parse(msg.content.toString());
             cache.save(message);
             wsServer.broadcast(JSON.stringify(message));
-            connection.ack(message);
+            channel.ack(msg);
         });
     });
 });
