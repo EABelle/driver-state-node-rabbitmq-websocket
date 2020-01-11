@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node . | bunyan"
   },
-  "author": "Gilles Rasigade",
   "dependencies": {
     "amqplib": "0.5.1",
     "bunyan": "1.8.10",
